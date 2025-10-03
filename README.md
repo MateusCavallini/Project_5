@@ -12,3 +12,5 @@ This is an interactive dashboard that visualizes data on the **60,199 deaths in 
 ## Data  
 
 The most recent data available goes up to **July 31, 2025**.  
+
+https://project-5-m3fj.onrender.com/
