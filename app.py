@@ -16,3 +16,20 @@ if hist_button: # se o botão for clicado
     st.plotly_chart(fig, use_container_width=True)
 
     print("Olá")
+
+build_histogram = st.checkbox('Criar um histograma')
+
+if build_histogram:
+        age_counts = war_data.groupby('age')["id"].count().reset_index(name='deaths') 
+        fig_scatter_age = px.scatter(
+        age_counts,
+        x='age',          
+        y='deaths',       
+        size='deaths',    
+        title='Number of Deaths by Age in Gaza',
+        labels={'age': 'Age', 'deaths': 'Number of Deaths'},
+        hover_data={'age': True, 'deaths': True}  
+        )
+        st.plotly_chart(fig_scatter_age, use_container_width=True)
+
+        st.write('Criando um histograma para a coluna de idade')
