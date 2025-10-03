@@ -32,4 +32,4 @@ if build_histogram:
         )
         st.plotly_chart(fig_scatter_age, use_container_width=True)
 
-        st.write('Criando um histograma para a coluna de idade')
+        st.write('Criando um gráfico de dispersão para a coluna de idade')
